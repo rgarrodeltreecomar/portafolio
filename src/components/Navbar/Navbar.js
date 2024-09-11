@@ -12,9 +12,9 @@ const Navbar = () => {
   return (
     <S.ContainerNavbar>
       <S.ContainerLogo>
-        <S.ImageLogo src="/img/logo.png" alt="Logo Rafa Tárrega" />
+        <S.ImageLogo src="/img/logo.png" alt="Rodrigo Garro" />
         <div>
-          <h1>Rafa Tárrega</h1>
+          <h1>Rodrigo Garro</h1>
           <h2>Frontend Developer</h2>
         </div>
       </S.ContainerLogo>

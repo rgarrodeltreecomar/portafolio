@@ -12,14 +12,14 @@ const Contact = () => {
   const [emptyInputs, setEmptyInputs] = useState(false);
   const [successSendForm, setSuccessSendForm] = useState(false);
   const [errorSendForm, setErrorSendForm] = useState(false);
+  const [errorDetails, setErrorDetails] = useState("");
 
   const form = useRef();
 
   const onSubmit = (e) => {
-    // evitar recargo de página
     e.preventDefault();
 
-    // validate form
+    
     if (
       contactDates.name === "" ||
       contactDates.email === "" ||
@@ -37,10 +37,16 @@ const Contact = () => {
         )
         .then(
           (result) => {
+            console.log("Email sent successfully:", result); // Log del resultado exitoso
             setSuccessSendForm(true);
+            setErrorSendForm(false); // Asegurarse de que el estado de error esté desactivado
+            setErrorDetails(""); // Limpiar detalles del error
           },
           (error) => {
+            console.error("Log ERROR", error); // Log del error
             setErrorSendForm(true);
+            setSuccessSendForm(false); // Asegurarse de que el estado de éxito esté desactivado
+            setErrorDetails(`Error code: ${error.status} - ${error.text}`); // Guardar detalles del error
           }
         );
     }
