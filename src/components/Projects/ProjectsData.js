@@ -13,6 +13,7 @@ import gasolineraProject from "../../images/projects/gasolinera.jpg";
 import marvelProject from "../../images/projects/marvel.jpg";
 import rickMorty from "../../images/projects/rick-morty.jpg";
 import tareasProject from "../../images/projects/todo.jpg";
+import cotizaDollar from "../../images/projects/cotizadolar.jpeg";
 
 export const projectsPortfolio = [
   {
@@ -24,7 +25,7 @@ export const projectsPortfolio = [
     ],
     description:
       "Application created with React JS and CSS to make a request an external API of Rick & Morty.",
-    repository: "https://github.com/ratasi/rick-morty/",
+    repository: "https://github.com/rgarrodeltreecomar/rick-morty",
     website: "#!",
   },
   {
@@ -48,7 +49,7 @@ export const projectsPortfolio = [
     ],
     description:
       "Application created with React JS and Styled Components to make a request an external API of Simpsons.",
-    repository: "https://github.com/ratasi/simpson-phrases",
+    repository: "https://github.com/rgarrodeltreecomar/simpsons-frases",
     website: "#!",
   },
   {
@@ -62,7 +63,7 @@ export const projectsPortfolio = [
     ],
     description:
       "Application created with React JS, React Router and Sass to make a request an external API of Marvel.",
-    repository: "https://github.com/ratasi/marvel-react",
+    repository: "https://github.com/rgarrodeltreecomar/marvel-react",
     website: "#!",
   },
   {
@@ -74,7 +75,7 @@ export const projectsPortfolio = [
     ],
     description:
       "Application of a landing page created with React JS and React Bootstrap to make a form with dynamic fields.",
-    repository: "https://github.com/ratasi/dynamic-form-project",
+    repository: "https://github.com/rgarrodeltreecomar/dynamic-form-project",
     website: "#!",
   },
   {
@@ -87,7 +88,20 @@ export const projectsPortfolio = [
     ],
     description:
       "Application created with Vite where you can save the information and see it on a summary",
-    repository: "https://github.com/ratasi/gasolinera-react-vite",
+    repository: "https://github.com/rgarrodeltreecomar/gasolinera-react-vite",
     website: "#!",
+  },
+
+  {
+    title: "Dollar Quote",
+    image: cotizaDollar,
+    techs: [
+      { name: "React JS ", src: reactImage },
+      { name: "CSS", src: cssImage },
+    ],
+    description:
+      "A simple application to query an API to show the value of the dollar is for personal use to buy or sell dollars",
+    repository: "https://github.com/rgarrodeltreecomar/cotizadordolar",
+    website: "https://cotizadordolar.vercel.app/",
   },
 ];

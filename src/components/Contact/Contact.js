@@ -37,16 +37,16 @@ const Contact = () => {
         )
         .then(
           (result) => {
-            console.log("Email sent successfully:", result); // Log del resultado exitoso
+            console.log("Email sent successfully:", result); 
             setSuccessSendForm(true);
-            setErrorSendForm(false); // Asegurarse de que el estado de error esté desactivado
-            setErrorDetails(""); // Limpiar detalles del error
+            setErrorSendForm(false);
+            setErrorDetails(""); 
           },
           (error) => {
-            console.error("Log ERROR", error); // Log del error
+            console.error("Log ERROR", error); 
             setErrorSendForm(true);
-            setSuccessSendForm(false); // Asegurarse de que el estado de éxito esté desactivado
-            setErrorDetails(`Error code: ${error.status} - ${error.text}`); // Guardar detalles del error
+            setSuccessSendForm(false); 
+            setErrorDetails(`Error code: ${error.status} - ${error.text}`); 
           }
         );
     }
