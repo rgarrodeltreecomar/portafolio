@@ -37,7 +37,7 @@ export const projectsPortfolio = [
     ],
     description:
       "Application created with React JS and Semantic UI to make a list of tasks where you can add or remove it.",
-    repository: "https://github.com/ratasi/todolist-udemy",
+    repository: "https://github.com/rgarrodeltreecomar/tareaslist",
     website: "#!",
   },
   {

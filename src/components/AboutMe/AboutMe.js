@@ -12,7 +12,7 @@ const AboutMe = () => {
     },
     {
       name: "LinkedIn",
-      link: "https://www.linkedin.com/in/rodrigo-garro-b69b27327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+      link: "https://www.linkedin.com/in/rodrigo-garro-b69b27327/",
       logo: logoLinkedin,
     },
 
